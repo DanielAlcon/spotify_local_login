@@ -140,7 +140,7 @@ function pegameLasCanciones (data) {
 		var songName = data.items[i].name;
 		var songUri = encodeURI(data.items[i].uri);
 		var trackNumber = data.items[i].track_number;
-		var songLi = '<li><iframe src="https://embed.spotify.com/?uri=' + songUri + '" data-name="' + songName + '" width="300" height="80" frameborder="0" allowtransparency="true"></iframe><<button type="submit" id="add" data-name="' + songName + '" >Añadir a favoritos</button></li>';
+		var songLi = '<li><iframe src="https://embed.spotify.com/?uri=' + songUri + '" data-name="' + songName + '" width="300" height="80" frameborder="0" allowtransparency="true"></iframe><button class="buttonAdd" type="submit" id="add" data-name="' + songName + '" >Añadir a favoritos</button></li>';
 		$('.albumSongsList').append(songLi);
 	}
 }
